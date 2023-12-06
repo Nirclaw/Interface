@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #7DA870;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+.Home {
+    display: grid;
+    grid-template-columns: 300px 1565px;
+    grid-template-rows: 959px;
+}
+
+.BarraLateral {
+    grid-column: 1;
+}
+
+.cuerpo {
+    grid-column: 2;
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+}
+
+.ContentNav {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 300px 300px;
+}
+
+.icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coticon {
+    box-shadow: 0px 3px 7.8px 0px rgba(61, 61, 61, 0.589);
+border-radius: 10px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: repeat(4, 40px);
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.libros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.editores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.lectores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.botonCrear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.crear {
+    margin-top: 60%;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 0px 3px 7.8px 0px #38363693;
+    background-color: #7DA870;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+font-size: 19px;
+}

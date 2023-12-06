@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+.CuadroFondo {
+    background-color: #E9A763;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 500px 390px;
+    grid-template-rows: 80px 80px 80px;
+
+}
+
+.titluloCuadro {
+    padding: 5%;
+    color: white;
+    font-size: 25px;
+
+}
+
+.CrearBorradorBoton {
+    color: white;
+    width: 200px;
+    height: 45px;
+    background-color: #343A3F;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Red Hat Display', sans-serif;
+    box-shadow: 0px 3px 7.8px 0px #38363693;
+    border: 0px;
+}
+
+.imglibros {
+    width: 340px;
+    height: 270px;
+}
+
+.contBotonBorrador {
+    padding-left: 5%;
+    grid-row: 3;
+    grid-column: 1;
+
+}
+
+.imagenBorrador {
+    grid-row: 1/4;
+    grid-column: 2;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.preguntas {
+    padding: 5%;
+
+    grid-column: 1;
+    grid-row: 2;
+    color: white;
+
+}
