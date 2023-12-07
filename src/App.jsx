@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavbarIzquierda } from './Navbar/NavbarIzquierda'
 import { Cuerpo } from './Cuerpo/Cuerpo'
+import { LoUltimo } from './Loultimo/LoUltimo'
 
 export const App = () => {
     return (
@@ -15,6 +16,8 @@ export const App = () => {
                 <div className='cuerpo'>
                     <Cuerpo />
                 </div>
+
+              
 
 
             </div>

@@ -1,0 +1,93 @@
+.contenedorDeLoultimo {
+    display: grid;
+    grid-template-columns: 530px;
+    grid-template-rows: 70px 50px 700px;
+    background-color: #f3f2f2e3;
+    border-radius: 15px;
+    box-shadow: 0px 3px 7.8px 0px rgba(61, 61, 61, 0.589);
+    padding: 10px;
+}
+
+.cabeceraLoultimo {
+    display: grid;
+    grid-template-columns: 290px 250px;
+    margin: 10px;
+}
+
+.LoUltimoTitulo {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+
+.vermasLoultimo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navLoUltimo {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.RecienteLoUltimo {
+    font-size: 20px;
+}
+
+.CardLoultimo{
+    padding: 10px;
+    display: grid;
+    row-gap: 10px;
+}
+.cardContendor {
+  
+    display: grid;
+    grid-template-rows: 150px  90px;
+    grid-template-columns: 510px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 15px;
+    box-shadow: 0px 3px 7.8px 0px rgba(61, 61, 61, 0.589);
+    justify-content: center;
+}
+
+
+.Foto {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.imgaenREciuente {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.CardCuerpo{
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 30px 50px;
+    grid-template-columns: 450px;
+}
+
+.titulocard{
+    font-size: 20px;
+}
+.DetallesCard{
+    font-size: 15px;
+}
+
+.PieCard{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 80px 300px ;
+}
+
+.PersonaFOto{
+    width: 50px;
+    border-radius: 15px;
+}

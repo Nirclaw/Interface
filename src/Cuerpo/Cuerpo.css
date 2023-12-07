@@ -4,9 +4,18 @@
 .contCuerpo{
     display: grid;
     grid-template-columns: 930px 580px;
-    grid-template-rows: 100px  230px 370px 260px;
+    grid-template-rows: 100px  230px 400px 220px;
 }
+.LoultimoContendor{
+    grid-column: 2;
+    grid-row: 2/4;
+    padding: 10px;
 
+}
+.RecomendacionesCont{
+    grid-row: 4;
+    padding: 10px;
+}
 .CrearBorrador{
     grid-row: 2;
     grid-column: 1/2;
@@ -15,7 +24,6 @@
 
 .InformacionCont{
     padding: 10px;
-
     grid-row: 3;
 }
 

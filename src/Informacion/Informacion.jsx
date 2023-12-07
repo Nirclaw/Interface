@@ -57,15 +57,51 @@ export const Informacion = () => {
                     <div className='Recientes'>
 
                         <div className='TituloReciente'>
-                            <div>Reciente</div>
-                            <div>ver todo</div>
+                            <div className='Recientetitulo'>Reciente</div>
+                            <div className='RecienteVertodo'><div className='vertodotexto'>ver todo</div></div>
                         </div>
 
                         <div className='ListaReciente'>
                             <div className='nombreycargo'>
                                 <div className='comentario'>
                                     <div className='nombreusuario'>Nicolas</div>
-                                    <div className='comentariousuario'>me ha gustado</div>
+                                    <div className='comentariousuario'>Le ha gustado este libro</div>
+                                </div>
+                                <div className='fecha'>may 7</div>
+
+                            </div>
+                            <hr />
+                            <div className='nombreycargo'>
+                                <div className='comentario'>
+                                    <div className='nombreusuario'>Nicolas</div>
+                                    <div className='comentariousuario'>Le ha gustado este libro</div>
+                                </div>
+                                <div className='fecha'>may 7</div>
+
+                            </div>
+                            <hr />
+                            <div className='nombreycargo'>
+                                <div className='comentario'>
+                                    <div className='nombreusuario'>Nicolas</div>
+                                    <div className='comentariousuario'>Le ha gustado este libro</div>
+                                </div>
+                                <div className='fecha'>may 7</div>
+
+                            </div>
+                            <hr />
+                            <div className='nombreycargo'>
+                                <div className='comentario'>
+                                    <div className='nombreusuario'>Nicolas</div>
+                                    <div className='comentariousuario'>Le ha gustado este libro</div>
+                                </div>
+                                <div className='fecha'>may 7</div>
+
+                            </div>
+                            <hr/>
+                            <div className='nombreycargo'>
+                                <div className='comentario'>
+                                    <div className='nombreusuario'>Nicolas</div>
+                                    <div className='comentariousuario'>Le ha gustado este libro</div>
                                 </div>
                                 <div className='fecha'>may 7</div>
 

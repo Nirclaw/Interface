@@ -1,0 +1,39 @@
+.ContenedorFOot {
+    display: grid;
+    grid-template-columns: 500px 410px;
+    grid-template-rows: 100px 100px;
+    background-color: #343A3F;
+    border-radius: 15px;
+}
+
+.FotolibrosFoot {
+    width: 200;
+    height: 200px;
+}
+
+.mensajeFoot {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.mensajesTipsFoot {
+    grid-column: 1;
+    grid-row: 2;
+    color: white;
+    font-size: 15px;
+    align-items: center;
+
+}
+
+.fotoslibros {
+    grid-column: 2;
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
