@@ -1,6 +1,49 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Informacion.css"
+import { Tarjeta } from './components/tarjeta'
 export const Informacion = () => {
+
+
+    const [datos, setDatos] = useState({
+        datos: []
+    })
+    const [informacion, setinformacion] = useState([])
+    const [cargar, setCargar] = useState(false)
+
+    useEffect(() => {
+        const Peticion = async () => {
+            fetch('https://rickandmortyapi.com/api/character/[1,2,3]')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    setDatos(data)
+                    const informa = data.map((info) => (
+                        <Tarjeta key={data.id} {...info} />
+                    ))
+                    setinformacion(informa)
+
+                })
+
+        };
+
+        Peticion()
+
+
+
+    }, [])
+
+    useEffect(() => {
+
+        setCargar(true)
+    }, [informacion])
+
+
+
+
     return (
         <>
             <div className='InformacionCont'>
@@ -21,35 +64,7 @@ export const Informacion = () => {
                             </div>
 
                             <div className='ListaAutores'>
-                                <div className='TablaAutores'>
-                                    <div className='fotoAutor'>foto</div>
-                                    <div className='nombreautor'>Nicolas</div>
-                                    <div className='cargoautor'>Disenoador</div>
-                                    <div className='lectoresAutor'>lectores</div>
-                                    <div className='CantidadLEctores'>143k</div>
-
-                                </div>
-                                <hr />
-                                <div className='TablaAutores'>
-                                    <div className='fotoAutor'>foto</div>
-                                    <div className='nombreautor'>Nicolas</div>
-                                    <div className='cargoautor'>Disenoador</div>
-                                    <div className='lectoresAutor'>lectores</div>
-                                    <div className='CantidadLEctores'>143k</div>
-
-                                </div>
-                                <hr />
-
-                                <div className='TablaAutores'>
-                                    <div className='fotoAutor'>foto</div>
-                                    <div className='nombreautor'>Nicolas</div>
-                                    <div className='cargoautor'>Disenoador</div>
-                                    <div className='lectoresAutor'>lectores</div>
-                                    <div className='CantidadLEctores'>143k</div>
-
-                                </div>
-
-
+                                {cargar == true ? informacion : <>cargando...</>}
                             </div>
 
                         </div>
@@ -97,7 +112,7 @@ export const Informacion = () => {
                                 <div className='fecha'>may 7</div>
 
                             </div>
-                            <hr/>
+                            <hr />
                             <div className='nombreycargo'>
                                 <div className='comentario'>
                                     <div className='nombreusuario'>Nicolas</div>
